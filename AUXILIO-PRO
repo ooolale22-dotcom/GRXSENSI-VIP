@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>AUXILIO PRO - ELITE</title>
+    <style>
+        :root {
+            --neon-blue: #00b4db;
+            --neon-cyan: #00f5ff;
+            --bg-black: #030508;
+            --panel-glass: rgba(10, 15, 25, 0.9);
+        }
+        body, html {
+            margin: 0; padding: 0; width: 100%; height: 100%;
+            background: var(--bg-black); color: white;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            overflow: hidden; user-select: none;
+        }
+        /* LOGIN OVERLAY */
+        #login-screen {
+            position: fixed; inset: 0; background: var(--bg-black);
+            z-index: 1000; display: flex; flex-direction: column;
+            align-items: center; justify-content: center;
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        .login-box {
+            width: 80%; max-width: 300px; padding: 30px;
+            border: 1
